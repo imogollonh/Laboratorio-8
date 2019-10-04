@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Formulario</title>
+</head>
+<body>
+    <form class="container">
+                <div class="form-header">
+                        <!-- form header -->   
+                        <form role="form" id="register-form" autocomplete="off">
+                            <div class="form-header">
+                            <h3 class="form-title"><i class="fa fa-user"></i> Sign Up</h3>                                                     
+                        </div>
+                </div>    
+        <form class="form-horizontal" role="form" method="post" action="index.php">
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Nombre</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+                </div>
+                </div>
+            <div class="form-group">
+                    <label for="name" class="col-sm-2 control-label">Elige una opcion:</label>
+                    <select class="mdb-select md-form" searchable="Search here..">
+                            <option value="" disabled selected>Escoge una opcion</option>
+                            <option value="1">Opción # 1</option>
+                            <option value="2">Opción # 2</option>
+                            <option value="3">Opción # 3</option>
+                            <option value="4">Opción # 4</option>
+                            <option value="5">Opción # 5</option>
+                          </select>
+                    </div>                 
+            </div>
+            <div class="form-group">
+                <label for="message" class="col-sm-2 control-label">Mensaje</label>
+                <div class="col-sm-10">
+                <textarea class="form-control" rows="4" name="message" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+            </div>  
+            <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">  
+                <label for="archivo">Archivo:</label>
+                <button type="submit" class="btn btn-info">
+                    <span class="glyphicon glyphicon-log-in"></span> Examinar...
+                </button>
+                <p class="inline">Maximo 50MB</p>
+                <button type="submit" class="btn btn-info">
+                    <span class="glyphicon glyphicon-log-in"></span> Enviar
+                </button>
+            </div>
+            </div>
+           </form>
+           </form>
+</body>
+</html>
